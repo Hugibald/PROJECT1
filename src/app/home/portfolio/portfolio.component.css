@@ -1,0 +1,32 @@
+/* Section-Name */
+h1 {
+  text-align: center;
+  padding-top: 2rem;
+}
+/* Swiper container*/
+.swiper {
+  width: 100%;
+  padding-top: 8rem;
+}
+/* The individual slides */
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: auto;
+}
+/* The pictures inside the slides */
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+/* The buttons */
+.swiper-navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.padding {
+  padding-bottom: 3rem;
+}

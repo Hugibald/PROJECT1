@@ -1,0 +1,11 @@
+<div class="app-container d-flex flex-column min-vh-100">
+  <app-navbar></app-navbar>
+  <main class="flex-grow-1">
+    <!-- Uncomment line below for the contact-card -->
+    <!-- <app-contact id="contact-card"></app-contact> -->
+    <router-outlet />
+  </main>
+  <app-footer></app-footer>
+  <!-- The newsletter popup -->
+  <app-newsletter-popup [visible]="showNewsletter"></app-newsletter-popup>
+</div>

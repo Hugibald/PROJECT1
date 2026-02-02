@@ -1,0 +1,58 @@
+<!-- Swiper -->
+<div>
+  <!-- If the ID exists, load slider -->
+  @if(photo){
+  <h1>{{ photo.title }}</h1>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <!-- Calls pictures from photo.ts over ID -->
+        <img [src]="'/Images/Themes/' + photo.image1" alt="{{ photo.alts }}" />
+      </div>
+      <div class="swiper-slide">
+        <img [src]="'/Images/Themes/' + photo.image2" alt="{{ photo.alts }}" />
+      </div>
+      <div class="swiper-slide">
+        <img [src]="'/Images/Themes/' + photo.image3" alt="{{ photo.alts }}" />
+      </div>
+      <div class="swiper-slide">
+        <img [src]="'/Images/Themes/' + photo.image4" alt="{{ photo.alts }}" />
+      </div>
+      <div class="swiper-slide">
+        <img [src]="'/Images/Themes/' + photo.image5" alt="{{ photo.alts }}" />
+      </div>
+      <div class="swiper-slide">
+        <img [src]="'/Images/Themes/' + photo.image6" alt="{{ photo.alts }}" />
+      </div>
+      <div class="swiper-slide">
+        <img [src]="'/Images/Themes/' + photo.image7" alt="{{ photo.alts }}" />
+      </div>
+      <div class="swiper-slide">
+        <img [src]="'/Images/Themes/' + photo.image8" alt="{{ photo.alts }}" />
+      </div>
+      <div class="swiper-slide">
+        <img [src]="'/Images/Themes/' + photo.image9" alt="{{ photo.alts }}" />
+      </div>
+      <div class="swiper-slide">
+        <img [src]="'/Images/Themes/' + photo.image10" alt="{{ photo.alts }}" />
+      </div>
+    </div>
+    <!-- So that the circles are not inside the pictures -->
+    <br /><br />
+    <!-- The circles showing slider-navigation -->
+    <div class="swiper-pagination"></div>
+  </div>
+  }@else{
+  <h2>Photos Not Found</h2>
+  }
+</div>
+<!-- The buttons for the click-navigation -->
+<div class="swiper-navigation">
+  <div class="btn btn-primary custom-prev">
+    <i class="fa-solid fa-arrow-left"></i>
+  </div>
+  <div class="btn btn-primary custom-next">
+    <i class="fa-solid fa-arrow-right"></i>
+  </div>
+</div>
+<div class="padding"></div>

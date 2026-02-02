@@ -1,0 +1,10 @@
+/* So that the footer always stays on the bottom */
+.container-main {
+  display: flex;
+  flex: 1;
+}
+/* So that the contact-card is fixed on its place */
+#contact-card {
+  position: fixed;
+  z-index: 3;
+}

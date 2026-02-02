@@ -1,0 +1,47 @@
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  height: 50vh;
+  background-position: 30% 25%;
+  background-image: url("/Images/fotographer2.jpg");
+}
+/* Text and background-banner for hero */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem 0;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+/* Quote,  Opening and Location*/
+.section-heading {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Hover-effect for Opening and Location */
+.card:hover {
+  border: 2px solid #597fe6;
+  transition: transform 0.3s ease;
+  transform: scale(1.05);
+  z-index: 1;
+}
+/* The section for the Award-pictures */
+.award-section {
+  margin-top: 5rem;
+  width: 100%;
+  .award-caption {
+    font-size: 0.7rem;
+  }
+}
+/* The award-pictures */
+.award {
+  height: 8rem;
+}

@@ -1,0 +1,59 @@
+/* social icons */
+.footer .social-icon i {
+  font-size: 1.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+/* Change on hover */
+.footer .social-icon:hover i {
+  transform: scale(1.2);
+  /* color: #0d6efd; */
+}
+
+/* styles subscribe button, inherits footer text color */
+.footer .btn-subscribe {
+  border: 2px solid currentColor;
+  color: inherit;
+  background-color: transparent;
+  font-size: 1rem;
+}
+/* Placeholder-text in subscribe-form */
+#newsletter-subscribe::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* hover effect for subscribe button */
+.footer .btn-subscribe:hover {
+  background-color: #597fe6;
+  color: #000;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+/* when dark mode active, make button light, keep background transparent */
+[data-bs-theme="dark"] .footer .btn-subscribe {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+  background-color: transparent;
+}
+
+/* style for email field in light mode */
+.footer input[type="email"] {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+/* override input colors when activated dark mode */
+[data-bs-theme="dark"] .footer input[type="email"] {
+  background-color: #fff;
+  color: #212529;
+  border-color: #212529;
+}
+
+.copyright {
+  font-size: 0.8rem;
+}

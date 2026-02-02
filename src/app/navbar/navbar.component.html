@@ -1,0 +1,65 @@
+<!-- Bootstrap-navbar modified -->
+<nav class="navbar navbar-expand-md bg-body-tertiary">
+  <!-- Collapses for screens smaller than medium -->
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" routerLink="/">
+      <!-- The Logo -->
+      <img src="Images/logo2.png" alt="Müller Photography Logo" height="40"
+    /></a>
+    <!-- The toggle-button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item mx-3">
+          <!-- The button for light- and dark-mode -->
+          <button
+            class="btn toggle"
+            (click)="toggleTheme()"
+            style="width: 48px; height: 48px"
+          >
+            <span *ngIf="isDarkMode">☀️</span>
+            <span *ngIf="!isDarkMode">🌙</span>
+          </button>
+          <!-- The links for navigation -->
+        </li>
+        <li class="nav-item mx-3">
+          <a
+            class="nav-link active"
+            routerLink="/"
+            (click)="scrollToSection('home')"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item mx-3">
+          <!-- Scrolls down on Home -->
+          <a
+            class="nav-link active"
+            routerLink="/"
+            (click)="scrollToSection('shooting-options')"
+            >Portfolio</a
+          >
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link active" routerLink="/about">About</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link active" routerLink="/reviews">Reviews</a>
+        </li>
+        <!-- If contact shall be a card, delete or comment this -->
+        <li class="nav-item mx-3">
+          <a class="nav-link active" routerLink="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

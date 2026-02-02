@@ -1,0 +1,74 @@
+/* The container of the review-cards */
+.reviews-cards {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.reviews-cards:hover .reviews-track {
+  animation-play-state: paused;
+}
+/* The animation for the cards */
+.reviews-track {
+  display: flex;
+  gap: 1.5rem;
+  animation: scrollReviews 25s linear infinite;
+}
+.reviews-cards:hover .reviews-track {
+  animation-play-state: paused;
+}
+/* The individual review-cars */
+.review-card {
+  flex: 0 0 230px;
+  background: var(--bs-body-bg);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+/* Transformation on hover */
+.review-card:hover {
+  transform: scale(1.1);
+}
+/* The Names of the reviewers */
+.review-card h5 {
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+  color: #597fe6;
+}
+/* The stars given by the reviewers */
+.review-card .stars {
+  color: #f6d32d;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+/* The list of articles */
+.list-group-item {
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Article-links in the list */
+.article-link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  transition: color 0.2s, transform 0.2s;
+}
+/* Changes on Hover */
+.article-link:hover {
+  color: #597fe6;
+  transform: translate(4px);
+}
+
+/* The movement of the review-cards */
+@keyframes scrollReviews {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

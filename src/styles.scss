@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+// Overwriting bootstrap colors
+$primary: #597fe6;
+$secondary: #6c757d;
+$success: #198754;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #212529;
+$body-bg-dark: #151719;
+$secondary-bg-subtle-dark: #2b3035;
+@import "bootstrap/scss/bootstrap";
+
+// To change dark-theme colors
+The dark-theme-colors [data-bs-theme="dark"] {
+  --bs-primary: #597fe6;
+  --bs-primary-rgb: 89, 127, 230;
+  --bs-body-bg: #151719;
+  --bs-secondary-bg-subtle: #2b3035;
+}
+// Bigger font for readability
+p {
+  font-size: 1.1rem;
+}
+
+/* Swiper pagination bullets color-override */
+.swiper {
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      // width: 15px !important; //Bullet-width - bigger bullets
+      // height: 15px !important; //Bullet-height - bigger bullets
+      // margin: 0 6px !important; //Space between the bullets
+      background-color: #ccc !important; // inactive bullets
+      opacity: 1 !important; //Don't change! Necesarry for darkmode!
+      transition: background-color 0.3s ease; // smooth color change
+    }
+    // Color for active bullet
+    .swiper-pagination-bullet-active {
+      background-color: #597fe6 !important;
+    }
+
+    // Hover effect for the bullets
+    .swiper-pagination-bullet:hover {
+      background-color: #597fe6 !important;
+    }
+  }
+}

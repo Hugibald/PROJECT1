@@ -1,0 +1,64 @@
+<!-- Uncomment for Contact-Card -->
+<!-- <div class="contact-container"> -->
+<!-- Button to show/hide the contact-card -->
+<!-- <button class="btn contact-toggle bg-primary border-black"
+    (click)="toggleCard($event)">Contact</button> -->
+<!-- The card with event-caller -->
+<!-- <div class="contact-card bg-body-tertiary border rounded p-2 text-center"
+    *ngIf="isOpen" (click)="$event.stopPropagation()"> -->
+<!-- The picture and the Information -->
+<!-- <img src="/Images/about_me.png" alt="My picture" class="contact-img" />
+    <h3>Christian Müller</h3>
+    <p>mueller&#64;photography.com</p>
+    <p>Tel: +43/1/734 51 32</p>
+    <p>Kettenbrückengasse 23/2/12</p>
+    <p>1050 Vienna</p>
+  </div>
+</div> -->
+
+<!-- Contact Site. Comment for Contact-card -->
+<!-- Heading and overall site -->
+<div class="main-container">
+  <h1>Contact me</h1>
+  <br />
+  <!-- Cards and Image container -->
+  <div class="contact-container">
+    <div class="container section-heading">
+      <div class="card-container text-center">
+        <!-- The contact-Information card -->
+        <div class="card-body">
+          <h3 class="card-title">Contact Information</h3>
+          <p class="card-text">
+            <i class="bi bi-envelope-at"></i> mueller&#64;photography.com
+          </p>
+          <p class="card-text">or: Mo-Fr 09:00 - 18:30</p>
+          <p class="card-text">
+            <i class="bi bi-telephone"></i> +43/1/734 51 32
+          </p>
+        </div>
+        <!-- Some gap between the cards -->
+        <br /><br />
+        <!-- The Location Card -->
+        <div class="card-body">
+          <h3 class="card-title">Location</h3>
+          <p class="card-text">Kettenbrückengasse 23/2/12</p>
+          <p class="card-text">1050 Vienna</p>
+        </div>
+      </div>
+    </div>
+    <!-- The picture -->
+    <img src="/Images/about_me2.png" alt="This is me" class="myPic" />
+  </div>
+  <br />
+  <!-- Implementing google-maps -->
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1645.0190431028154!2d16.358146214069063!3d48.196710665981534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d07866f5ea789%3A0x5c320007be5849de!2sKettenbr%C3%BCckengasse%2023%2C%201050%20Wien!5e0!3m2!1sde!2sat!4v1761206264331!5m2!1sde!2sat"
+    width="600"
+    height="400"
+    style="border: 0"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    class="map"
+  ></iframe>
+</div>

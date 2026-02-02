@@ -1,0 +1,84 @@
+/* Uncomment below for contact card */
+
+/* Position of the contact-card */
+/* .contact-container {
+  position: fixed;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+} */
+
+/* The z-index of the button */
+/* .contact-toggle {
+  z-index: 2;
+} */
+/* The z-index for the card */
+/* .contact-card {
+  z-index: 1;
+} */
+/* The image */
+/* .contact-img {
+  max-height: 40vh;
+  margin: auto;
+} */
+
+/* Comment for contact-card */
+/* Margin for site */
+.main-container {
+  margin: 3rem;
+  text-align: center;
+}
+/* The container containing cards and image */
+.contact-container {
+  display: flex;
+  align-items: center;
+}
+/* The cards */
+.card-body {
+  border: #597fe6 2px solid;
+  border-radius: 10px;
+  margin: 1rem;
+}
+/* The image */
+.myPic {
+  height: 500px;
+}
+/* For smaller screens */
+@media (max-width: 399px) {
+  .main-container {
+    margin: 1.5rem;
+  }
+  .card-body {
+    margin: 0.2rem;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-text {
+    font-size: 0.8rem;
+  }
+  .myPic {
+    height: 0px;
+  }
+  .map {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .myPic {
+    height: 0px;
+  }
+  .map {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 601px) and (max-width: 740px) {
+  .myPic {
+    height: 300px;
+  }
+  .map {
+    width: 400px;
+  }
+}

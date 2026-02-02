@@ -1,0 +1,21 @@
+<div class="overlay" *ngIf="visible">
+  <div class="popup-card">
+    <!-- Closing Button -->
+    <button class="close-btn" (click)="closePopup()">x</button>
+    <!-- Heading and Text -->
+    <h2>Join my Newsletter</h2>
+    <p>Stay updated with the latest shoots and offers!</p>
+    <!-- Input field for E-Mail -->
+    <form (ngSubmit)="submitForm()" #newsletterForm="ngForm">
+      <input
+        type="email"
+        placeholder="Email"
+        name="email"
+        [(ngModel)]="formData.email"
+        (ngModelChange)="saveProgress()"
+      />
+      <!-- Submit-Button -->
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</div>

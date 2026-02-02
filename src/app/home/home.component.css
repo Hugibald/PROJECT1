@@ -1,0 +1,71 @@
+/* Hero Section */
+/* Hero-container and picture */
+.hero {
+  position: relative;
+  text-align: center;
+  height: 50vh;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("/Images/hero2.jpg");
+}
+/* Text over hero */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  padding: 1rem 0;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+/* Section underneath the hero */
+.home {
+  padding-top: 5rem;
+  margin: auto;
+  text-align: center;
+}
+
+/* Options Section including picture-grid */
+.options {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+}
+/* The container for the pictures */
+.product-pic {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* The pictures */
+  img {
+    width: 12rem;
+    height: 12rem;
+    margin: 0.5rem;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+}
+/* The writing on the pictures */
+.product-tag p {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 0.3rem;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 4px;
+}
+
+/* The hover-effect over the pictures */
+.product-pic:hover img {
+  transform: scale(1.05);
+  cursor: pointer;
+}

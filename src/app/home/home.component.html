@@ -1,0 +1,101 @@
+<!-- Hero starst -->
+<section id="home">
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Photo Studio Müller</h1>
+    </div>
+  </div>
+</section>
+<!-- Hero Ends -->
+<!-- About Section Starts -->
+<div class="container home">
+  <p>
+    At Photo Studio Müller in Vienna, photography is more than just capturing
+    moments — it’s about <b>telling your story</b> in the most authentic and
+    beautiful way. My studio combines <b>technical excellence</b> with a warm,
+    welcoming atmosphere, ensuring
+    <b>every client feels seen, heard, and valued</b>. Whether it’s a personal
+    portrait, a professional shoot, or a creative concept, I tailor every
+    session to your unique vision. With transparency, openness, and a passion
+    for high-quality photography,
+    <strong>let's create images that inspire and last a lifetime.</strong>
+  </p>
+  <button class="btn btn-primary border-black" routerLink="about">
+    Read more about me
+  </button>
+</div>
+<!-- About Section Ends-->
+<!-- Product Categories Start -->
+<!-- Section to scroll down to on Navbar click-->
+<section id="shooting-options">
+  <div class="container options">
+    <h3 class="text-center">Shooting Options</h3>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+      <!-- Wedding -->
+      <div class="col product-pic btn" [routerLink]="['/portfolio/1']">
+        <img src="/Images/Cards/weddings.jpg" alt="wedding" />
+        <div class="product-tag">
+          <p>Weddings</p>
+        </div>
+      </div>
+      <!-- Newborn -->
+      <div class="col product-pic" [routerLink]="['/portfolio/2']">
+        <img src="/Images/Cards/newborns.jpg" alt="Baby Pictures" />
+        <div class="product-tag">
+          <p>Newborn</p>
+        </div>
+      </div>
+      <!-- Events -->
+      <div class="col product-pic" [routerLink]="['/portfolio/3']">
+        <img src="/Images/Cards/parties.jpg" alt="Events" />
+        <div class="product-tag">
+          <p>Events</p>
+        </div>
+      </div>
+      <!-- Portraits -->
+      <div class="col product-pic" [routerLink]="['/portfolio/4']">
+        <img src="/Images/Cards/portraits.jpg" alt="Portraits" />
+        <div class="product-tag">
+          <p>Portraits</p>
+        </div>
+      </div>
+      <!-- Casting Cards -->
+      <div class="col product-pic" [routerLink]="['/portfolio/5']">
+        <img src="/Images/Cards/casting.jpg" alt="Casting Cards" />
+        <div class="product-tag">
+          <p>Casting Cards</p>
+        </div>
+      </div>
+      <!-- Black & White -->
+      <div class="col product-pic" [routerLink]="['/portfolio/6']">
+        <img src="/Images/Cards/black_white.jpg" alt="Black & White" />
+        <div class="product-tag">
+          <p>Black & White</p>
+        </div>
+      </div>
+      <!-- Maternity -->
+      <div class="col product-pic" [routerLink]="['/portfolio/7']">
+        <img src="/Images/Cards/maternity.jpg" alt="Maternity" />
+        <div class="product-tag">
+          <p>Maternity</p>
+        </div>
+      </div>
+      <!-- Families -->
+      <div class="col product-pic" [routerLink]="['/portfolio/8']">
+        <img src="/Images/Cards/family.jpg" />
+        <div class="product-tag">
+          <p>Families</p>
+        </div>
+      </div>
+      <!-- Products -->
+      <div class="col product-pic" [routerLink]="['/portfolio/9']">
+        <img src="/Images/Cards/products.jpg" alt="Products" />
+        <div class="product-tag">
+          <p>Products</p>
+        </div>
+      </div>
+      <!-- Sektion Ends -->
+    </div>
+  </div>
+</section>
+<!-- Product Categories Ends -->
